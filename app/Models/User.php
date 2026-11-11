@@ -11,7 +11,7 @@ class User extends Authenticatable
     use HasFactory, Notifiable;
 
     // Le decimos a Laravel que use tu tabla 'usuarios'
-    protected $table = 'usuarios';
+    protected $table = 'usuarios'; // <--- CAMBIADO AQUÍ
 
     protected $fillable = [
         'rol_id',

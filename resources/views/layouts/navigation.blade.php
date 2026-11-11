@@ -15,6 +15,31 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    <!-- Nuevas Rutas Agregadas -->
+                    <x-nav-link :href="route('generar-turno')" :active="request()->routeIs('generar-turno')">
+                        {{ __('Generar Turno') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('panel-atencion')" :active="request()->routeIs('panel-atencion')">
+                        {{ __('Panel de Atención') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('pantalla-publica')" :active="request()->routeIs('pantalla-publica')">
+                        {{ __('Pantalla Pública') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('servicios.index')" :active="request()->routeIs('servicios.*')">
+                        {{ __('Servicios') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('ventanillas.index')" :active="request()->routeIs('ventanillas.*')">
+                        {{ __('Ventanas') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('usuarios.index')" :active="request()->routeIs('usuarios.*')">
+                        {{ __('Usuarios') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -69,6 +94,30 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('generar-turno')" :active="request()->routeIs('generar-turno')">
+                {{ __('Generar Turno') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('panel-atencion')" :active="request()->routeIs('panel-atencion')">
+                {{ __('Panel de Atención') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('pantalla-publica')" :active="request()->routeIs('pantalla-publica')">
+                {{ __('Pantalla Pública') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('servicios.index')" :active="request()->routeIs('servicios.*')">
+                {{ __('Servicios') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('ventanillas.index')" :active="request()->routeIs('ventanillas.*')">
+                {{ __('Ventanas') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('usuarios.index')" :active="request()->routeIs('usuarios.*')">
+                {{ __('Usuarios') }}
             </x-responsive-nav-link>
         </div>
 
