@@ -26,4 +26,17 @@ class NuevoTurnoGenerado implements ShouldBroadcast
             new Channel('pantalla-publica'),
         ];
     }
+
+    public function broadcastAs(): string
+    {
+        return 'turno.llamado';
+    }
+
+    // Enviamos todos los datos del turno
+    public function broadcastWith(): array
+    {
+        return [
+            'turno' => $this->turno
+        ];
+    }
 }
